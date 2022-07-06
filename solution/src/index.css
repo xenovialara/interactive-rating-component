@@ -1,0 +1,58 @@
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Lightgrey: hsl(217, 12%, 63%);
+  --Mediumgrey: hsl(216, 12%, 54%);
+  --Darkblue: hsl(213, 19%, 18%);
+  --Verydarkblue: hsl(216, 12%, 8%);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  background: var(--Verydarkblue);
+  margin: 0 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 0.1px);
+}
+
+.wrapper {
+  background: linear-gradient(120deg, var(--Darkblue), var(--Verydarkblue));
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+}
+
+.btn-rating {
+  background-color: var(--Orange);
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-rating:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+.btn-number:hover {
+  background-color: var(--Orange);
+}
+
+.p-rating {
+  color: var(--Orange);
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    width: 400px;
+  }
+}
